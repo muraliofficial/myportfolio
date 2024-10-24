@@ -1,0 +1,71 @@
+#Project-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    transition: 1s;
+    background: linear-gradient(170deg, #2E073F, #AD49E1);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px #8500cc,
+    0px 0px 10px #000000;
+}
+
+#test {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#pro-card {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+#imgr {
+    width: 600px;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+#imgr.shrink {
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    filter: grayscale(1);
+}
+
+#pro-txt {
+    flex: 3;
+    padding: 20px;
+    transition: transform 0.5s ease;
+    transform: translateX(100%);
+}
+
+#pro-txt.shrink {
+    transform: translateX(0);
+}
+
+#toggle-btn {
+    padding: 150px 10px;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+
+#toggle-btn:focus{
+    outline: none;
+    border: none;
+    color: aqua;
+}

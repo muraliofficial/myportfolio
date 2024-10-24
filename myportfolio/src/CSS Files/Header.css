@@ -1,0 +1,154 @@
+#head-container {
+    color: white;
+}
+
+#Mydetails {
+    flex: 1;
+}
+
+.Name {
+    font-family: cursive;
+    font-size: 55px;
+    color: #ff9900;
+}
+
+.typing {
+    width: 280px;
+    font-family: monospace;
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    border-right: 2px solid #ffffff;
+    animation: typing 3s steps(30) alternate 1s,
+        cursor 0.8s linear infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+#btndiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#head-button2,
+#head-button1 {
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: linear-gradient(130deg, black, blue);
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #ffffff, transparent)1;
+    animation-name: btnanime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes btnanime {
+    0% {
+        border-image: linear-gradient(to right, #ffffff, transparent)1;
+    }
+
+    50% {
+        border-image: linear-gradient(to right, transparent, #ffffff)1;
+    }
+
+    100% {
+        border-image: linear-gradient(to right, #ffffff, transparent)1;
+
+    }
+}
+
+#imgtag {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#Myimg {
+    position: relative;
+    width: 340px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profileimg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+#contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00ffff94;
+    color: #ffffff;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+#con {
+    color: white;
+    transition: 0.5s;
+}
+
+#con:hover {
+    color: blue;
+}
+
+#Myimg:hover #contact {
+    opacity: 1;
+}
+
+#Myimg:hover #profileimg {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width:700px) {
+    .typing {
+        width: 301px;
+    }
+
+    #Myimg {
+        position: relative;
+        width: 280px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}

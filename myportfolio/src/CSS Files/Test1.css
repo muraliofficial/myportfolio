@@ -1,0 +1,106 @@
+*{
+  transition: 1s;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 0 20px;
+    color: white;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  #nav-ul {
+    list-style: none;
+    gap: 15px;
+  }
+  .nav-li::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    z-index: -1;
+    scale: 0 1;
+    background-color: #ff7519;
+}
+
+.nav-li:hover {
+    color: black;
+    border-radius: 6px;
+
+}
+
+.nav-li:hover::after {
+  transition: 0.45s;
+    scale: 1 1;
+}
+  
+  .nav-li {
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .mob-menu-icon {
+    display: none;
+  }
+  
+  /* Desktop View */
+  @media screen and (min-width: 781px) {
+    .nav-link-desktop {
+      display: flex; /* Always visible on desktop */
+      justify-content: flex-end;
+    }
+  
+    .nav-link-mobile {
+      display: none; /* Hidden on desktop */
+    }
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 780px) {
+    .logo {
+      position: relative;
+    }
+  
+    .mob-menu-icon {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      color: #ff8800;
+      cursor: pointer;
+    }
+  
+    .nav-link-desktop {
+      display: none; /* Hide desktop menu in mobile view */
+    }
+  
+    .nav-link-mobile {
+      position: absolute;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      background: #000000;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      transition: all 0.5s ease-out;
+      display: none; /* Hidden by default */
+    }
+  
+    /* Show mobile nav only when the menu is toggled */
+    .nav-link-mobile.active {
+      display: flex;
+    }
+  }
+  
