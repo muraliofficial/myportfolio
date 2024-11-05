@@ -26,7 +26,7 @@ export default function Header() {
             <div id='contact'>
               <h3>Murali A</h3>
               <a href='https://wa.me/916383217328?text=Hello...!!! Murali ' id='con'>+91 6383217328</a>
-              <a href='mailto:murali_official@outlook.com' id='con'>murali_official@outlook.com</a>
+              <a href='mailto:muraliofficial68@gmail.com' id='con'>muraliofficial68@gmail.com</a>
             </div>
           </div>
         </div>
