@@ -56,7 +56,7 @@ export default function Footer() {
               <ul className="contact-list">
                 <li><span className="material-symbols-outlined">emoji_people</span> Murali A</li>
                 <li><span className="material-symbols-outlined">phone_in_talk</span> <a href='tel:+91 6383217328'>+91 XXXXX XXXXX</a></li>
-                <li><span className="material-symbols-outlined">mail</span> <a href="mailto:murali_official@outlook.com" target="_top">murali_official@outlook.com</a></li>
+                <li><span className="material-symbols-outlined">mail</span> <a href="mailto:muraliofficial68@gmail.com" target="_top">muraliofficial68@gmail.com</a></li>
                 <li><span className="material-symbols-outlined">home_pin</span> Erode, Tamil Nadu</li>
               </ul>
             </div>
