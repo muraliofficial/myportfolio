@@ -17,7 +17,7 @@ export default function Header() {
           <p className='typing'>Full Stack Developer</p>
           <div id='btndiv'>
             <button id='head-button1'><a href='#footer'>Contact Me</a></button>
-            <button id='head-button2'><a href='https://drive.google.com/file/d/1-40lnqNsVI2Nzn5FtVcUt9hTa_nJlHwR/view?usp=sharing' target='blank' download>Resume</a></button>
+            <button id='head-button2'><a href='https://drive.google.com/file/d/16-d8qmccdtIf2_Oa_OZVOq81v83xwVrF/view?usp=drivesdk' target='blank' download>Resume</a></button>
           </div>
         </div>
         <div className='col-5' id='imgtag'>
